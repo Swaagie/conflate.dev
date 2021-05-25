@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Conflate.dev</title>
+  </head>
+  <body>
+    <header>
+      <h1>Conflate.dev</h1>
+      <nav>
+        <ul id="nav">
+          <li><a href="/about">about</a></li>
+        </ul>
+      </nav>
+      <label> Darkmode <input type="checkbox" /> </label>
+    </header>
+    <main>
+      <select id="descriptor">
+        <option value="json">JSON</option>
+        <option value="yaml">YAML</option>
+        <option value="cbor">CBOR</option>
+      </select>
+      <textarea rows="5" id="config">{}</textarea>
+    </main>
+    <footer>License: MIT</footer>
+    <script src="index.js"></script>
+  </body>
+</html>

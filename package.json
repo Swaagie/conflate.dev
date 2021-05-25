@@ -1,0 +1,26 @@
+{
+  "name": "conflate.dev",
+  "version": "1.0.0",
+  "description": "Translate config",
+  "main": "./src/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "npm run build:wasm && npm run build:js",
+    "build:wasm": "wasm-pack build",
+    "build:js": "webpack --config webpack.config.js",
+    "start": "webpack serve",
+    "lint": "prettier --check ."
+  },
+  "author": "Martijn Swaagman",
+  "license": "MIT",
+  "devDependencies": {
+    "@wasm-tool/wasm-pack-plugin": "^1.4.0",
+    "copy-webpack-plugin": "^9.0.0",
+    "prettier": "2.3.0",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
